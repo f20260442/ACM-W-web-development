@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="app-body">
+    <div class="container">
+      <div class="app-header">
+        <a href="index.html" class="back-link">← Home</a>
+        <h1>My Tasks</h1>
+      </div>
+
+      <div class="progress-container">
+        <p id="task-count">0 of 0 tasks done</p>
+        <div class="progress-bar-bg">
+          <div class="progress-bar-fill" id="progress-bar"></div>
+        </div>
+      </div>
+
+      <div class="input-section">
+        <input
+          type="text"
+          id="task-input"
+          placeholder="What needs to be done?"
+        />
+        <input type="date" id="date-input" />
+        <select id="priority-input">
+          <option value="low">Low</option>
+          <option value="medium" selected>Medium</option>
+          <option value="high">High</option>
+        </select>
+        <button id="add-btn">Add Task</button>
+      </div>
+
+      <ul id="task-list"></ul>
+
+      <div class="controls">
+        <button id="clear-completed-btn">Clear Completed Tasks</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
